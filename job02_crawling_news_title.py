@@ -57,7 +57,7 @@ for l in range(2):  #정치인지, 경제인지...
             df_section_title['category'] = category[l]
             df_section_title.to_csv('./crawling_data/data_{}_{}.csv'.format(l, k)) #저장
             #df_titles = pd.concat([df_titles, df_section_title], axis='rows', ignore_index=True)
-
+            titles=[]
 driver.close()
 #df_titles.to_csv()
 
